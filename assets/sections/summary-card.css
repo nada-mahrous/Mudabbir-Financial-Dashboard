@@ -1,0 +1,65 @@
+/* recent-balance */
+.layout .main .recent-balance {
+  grid-area: recent-balance;
+}
+/* card */
+.layout .main .card {
+  /* background-color: teal; */
+  background-color: #fff;
+  grid-area: recent-balance;
+  margin-bottom: 24px;
+  padding: 32px;
+  border: 1px solid #ebe6e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 #0000001a;
+}
+
+/* balance-title */
+.layout .main .card .balance-title {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 0.875rem;
+  color: #6a7282;
+  margin: 0 0 8px 0;
+}
+/* balance-amount */
+.layout .main .card .balance-amount {
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 24px;
+  color: #101828;
+  margin: 0;
+}
+/* balance-change */
+.layout .main .card .balance-change {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 0.875rem;
+  color: #00a63e;
+  margin: 8px 0 0 4px;
+}
+/* ****************************************** */
+/* ****************************************** */
+/* income */
+.layout .main .income {
+  grid-area: income;
+}
+/* ****************************************** */
+/* ****************************************** */
+/* outgoings */
+.layout .main .outgoings {
+  grid-area: outgoings;
+}
+
+/* balance-change-down */
+.layout .main .card .balance-change-down {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 0.875rem;
+  color: #e7000b;
+  margin: 8px 0 0 4px;
+}

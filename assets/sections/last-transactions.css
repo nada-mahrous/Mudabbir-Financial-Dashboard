@@ -1,0 +1,414 @@
+.layout .main .last-transactions {
+  grid-area: last-transactions;
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 24px;
+  border: 1px solid #ebe6e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 #0000001a;
+}
+/* ****************************************** */
+/* last-transactions-title */
+.layout .main .last-transactions .last-transactions-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* last-transactions-title h3 */
+.layout .main .last-transactions .last-transactions-title h3 {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  margin: 0;
+}
+/* last-transactions-title span */
+.layout .main .last-transactions .last-transactions-title span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4a5565;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+/* last-transactions-title span:hover */
+.layout .main .last-transactions .last-transactions-title span:hover {
+  color: #101828;
+}
+/* ****************************************** */
+/* last-transactions-content */
+.layout .main .last-transactions .last-transactions-content {
+  width: 100%;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+  border-collapse: collapse;
+}
+/* last-transactions-content thead tr */
+.layout .main .last-transactions .last-transactions-content thead tr {
+  border-bottom: 1px solid #f6f3f4;
+}
+/* last-transactions-content thead tr th */
+.layout .main .last-transactions .last-transactions-content thead tr th {
+  padding: 12px 8px;
+  text-align: left;
+  color: #364153;
+  text-align: right;
+}
+/* ****************************************** */
+/* last-transactions-content tbody tr */
+.layout .main .last-transactions .last-transactions-content tbody tr {
+  border-bottom: 1px solid #fbf9fa;
+}
+/* last-transactions-content tbody tr td*/
+.layout .main .last-transactions .last-transactions-content tbody tr td {
+  padding: 16px 8px;
+}
+/* ****************************************** */
+/* transaction */
+/* last-transactions-content tbody tr td transaction*/
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* ****************** */
+/* last-transactions-content tbody tr td transaction transaction-img img */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-img
+  img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* transaction-icon  */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* transaction-icon2  */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-icon2 {
+  background-color: #ffedd4;
+  color: #f54a00;
+}
+/* transaction-icon3  */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-icon3 {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+/* transaction-icon6  */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-icon6 {
+  background-color: #ffe2e2;
+  color: #e7000b;
+}
+/* transaction-icon7  */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-icon7 {
+  background-color: #e0e7ff;
+  color: #4f39f6;
+}
+/* transaction-icon8  */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-icon8 {
+  background-color: #cefafe;
+  color: #0092b8;
+}
+/* transaction-icon9  */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-icon9 {
+  background-color: #d0fae5;
+  color: #009966;
+}
+/* ****************** */
+/* last-transactions-content tbody tr td transaction transaction-name */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-details
+  .transaction-name {
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 0;
+}
+/* last-transactions-content tbody tr td transaction transaction-type */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .transaction
+  .transaction-details
+  .transaction-type {
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  margin: 0;
+  color: #6a7282;
+}
+/* ****************************************** */
+/* type */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc {
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  align-items: center;
+}
+/* .type-desc1 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc1 {
+  color: #016630;
+  background-color: #dcfce7;
+}
+/* .type-desc2 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc2 {
+  color: #9f2d00;
+  background-color: #ffedd4;
+}
+/* .type-desc3 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc3 {
+  color: #193cb8;
+  background-color: #dbeafe;
+}
+/* .type-desc4 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc4 {
+  color: #6e11b0;
+  background-color: #f3e8ff;
+}
+/* .type-desc5 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc5 {
+  color: #016630;
+  background-color: #dcfce7;
+}
+/* .type-desc6 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc6 {
+  color: #9f0712;
+  background-color: #ffe2e2;
+}
+/* .type-desc7 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc7 {
+  color: #372aac;
+  background-color: #e0e7ff;
+}
+/* .type-desc8 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc8 {
+  color: #005f78;
+  background-color: #cefafe;
+}
+/* .type-desc9 */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .type-desc9 {
+  color: #006045;
+  background-color: #d0fae5;
+}
+/* ****************************************** */
+/* date */
+.layout .main .last-transactions .last-transactions-content tbody tr .date {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4a5565;
+}
+/* ****************************************** */
+/* status */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .status {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 12px;
+  align-items: center;
+  padding: 2px 10px;
+}
+/* status completed */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .completed {
+  color: #016630;
+  background-color: #dcfce7;
+}
+/* status pending */
+.layout
+  .main
+  .last-transactions
+  .last-transactions-content
+  tbody
+  tr
+  td
+  .pending {
+  color: #894b00;
+  background-color: #fef9c2;
+}
+/* ****************************************** */
+/* amount */
+.layout .main .last-transactions .last-transactions-content tbody tr .amount {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+  /* color: #101828; */
+}
+/* amount increase */
+.layout .main .last-transactions .last-transactions-content tbody tr .increase {
+  color: #00a63e;
+}

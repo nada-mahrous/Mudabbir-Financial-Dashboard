@@ -1,0 +1,170 @@
+/* layout */
+.layout {
+  background-color: #fbf9fa;
+  display: grid;
+  /* grid-template-columns: 64px 1fr; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "sidebar main" "sidebar main";
+
+  height: 100vh;
+  position: relative;
+}
+/* ****************************************** */
+/* ****************************************** */
+
+/* ****************************************** */
+
+
+.layout .main {
+  /* overflow: hidden; */
+  /* width: 100%; */
+  padding: 32px;
+  margin: auto;
+  background-color: #f9fafb;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "recent-balance"
+    "income"
+    "outgoings"
+    "recent-activities"
+    "last-transactions"
+    "monthly-bills"
+    "budget-overview"
+    "income-vs-expenses"
+    "account-summary"
+    "payment-methods";
+
+  /* margin-right: 260px; */
+  
+}
+
+/******************** Media Query ********************/
+
+/* 
+     0 ---> 768px = no sidebar
+     768px ---> 1280px = sidebar collapsed
+     1280px ---> = sidebar expanded
+ */
+
+/* md */
+@media screen and (min-width: 768px) {
+  .layout {
+    grid-template-columns: 64px 1fr;
+  }
+  .layout .show {
+    /* display: flex !important; */
+    display: block !important;
+    z-index: 10 !important;
+    width: 64px;
+  }
+  .layout
+    .sidebar
+    .sidebar-content
+    .quick-actions
+    .quick-actions-items
+    .sidebar-action-btn
+    .d-block {
+    display: none;
+  }
+  .layout .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header header header"
+      "recent-balance recent-balance income income outgoings outgoings"
+      "recent-activities recent-activities recent-activities income-vs-expenses income-vs-expenses income-vs-expenses"
+      "last-transactions last-transactions last-transactions last-transactions last-transactions last-transactions"
+      "monthly-bills monthly-bills monthly-bills account-summary account-summary account-summary"
+      "budget-overview budget-overview budget-overview payment-methods payment-methods payment-methods";
+  }
+
+  .layout .main .card-space-left {
+    margin-left: 24px;
+  }
+  .layout .main .space-left {
+    margin-left: 16px;
+  }
+  .layout .main .income-vs-expenses {
+    margin: 0;
+  }
+  .layout .main .account-summary {
+    margin: 0;
+  }
+}
+
+/* xl */
+@media screen and (min-width: 1280px) {
+  .layout {
+    grid-template-columns: 256px 1fr;
+  }
+  .layout .sidebar {
+    display: flex;
+    z-index: 10 !important;
+    width: 260px;
+    background-color: #fffffff2;
+  }
+  .layout .sidebar .sidebar-content {
+    padding: 1.5rem !important;
+  }
+  .layout .sidebar .sidebar-content .sidebar-logo .logo-icon {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 1.25rem !important;
+    line-height: 24px !important;
+  }
+  .layout .sidebar .sidebar-content .sidebar-nav ul {
+    width: 100% !important;
+    height: auto !important ;
+  }
+  .layout .sidebar .sidebar-content .sidebar-nav .nav-item .nav-icon {
+    justify-content: flex-start !important;
+  }
+  .layout
+    .sidebar
+    .sidebar-content
+    .quick-actions
+    .quick-actions-items
+    .sidebar-action-btn {
+    justify-content: flex-start !important;
+    padding: 12px !important;
+  }
+  /* .layout
+    .sidebar
+    .sidebar-content
+    .quick-actions
+    .quick-actions-items
+    .sidebar-action-btn {
+    justify-content: flex-start !important;
+    padding: 12px !important;
+  } */
+
+  .layout .sidebar .sidebar-content .sidebar-nav .nav-item .nav-icon .d-block {
+    display: block !important;
+  }
+  .layout .sidebar .sidebar-content .sidebar-logo .d-block {
+    display: block !important;
+  }
+  .layout .sidebar .sidebar-content .quick-actions .d-block {
+    display: block !important;
+  }
+  .layout .main {
+    grid-template-areas:
+      "header header header header header header"
+      "recent-balance recent-balance income income outgoings outgoings"
+      "recent-activities recent-activities last-transactions  last-transactions  last-transactions  last-transactions "
+      "monthly-bills monthly-bills last-transactions  last-transactions  last-transactions  last-transactions "
+      "budget-overview budget-overview income-vs-expenses income-vs-expenses payment-methods payment-methods"
+      "budget-overview budget-overview account-summary account-summary payment-methods payment-methods";
+  }
+  .layout .main .card .balance-amount {
+    line-height: 40px !important;
+    font-size: 36px !important;
+  }
+  .layout .main .space-left {
+    margin-left: 16px;
+  }
+}

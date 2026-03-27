@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-style: normal;
+  color: #101828;
+}
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+body::selection {
+  background-color: #3B82F6;
+  color: #fff;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* ****************************************** */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ****************************************** */
+
+/* .layout .main .space-left {
+  margin-left: 16px;
+} */
+/* ****************************************** */
+
+/******************** Media Query ********************/

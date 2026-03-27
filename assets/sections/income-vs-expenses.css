@@ -1,0 +1,170 @@
+.layout .main .income-vs-expenses {
+  grid-area: income-vs-expenses;
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 24px;
+  border: 1px solid #ebe6e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 #0000001a;
+}
+/* ****************************************** */
+/* income-vs-expenses-title */
+.layout .main .income-vs-expenses .income-vs-expenses-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* income-vs-expenses-title h3 */
+.layout .main .income-vs-expenses .income-vs-expenses-title h3 {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  margin: 0;
+}
+/* income-vs-expenses-title span */
+.layout .main .income-vs-expenses .income-vs-expenses-title span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4a5565;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+/* income-vs-expenses-title span:hover */
+.layout .main .income-vs-expenses .income-vs-expenses-title span:hover {
+  color: #101828;
+}
+/* ****************************************** */
+/* income-vs-expenses-chart */
+.layout .main .income-vs-expenses .income-vs-expenses-chart {
+  width: 100%;
+  /* height: 192px; */
+}
+/* chart-legend */
+.layout .main .income-vs-expenses .income-vs-expenses-chart .chart-legend {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+/* chart-legend .chart-legend-item */
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-legend
+  .chart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-weight: 600;
+  line-height: 18px;
+  font-size: 12px;
+}
+/* chart-legend .chart-legend-item .legend-income */
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-legend
+  .chart-legend-item
+  .legend-income {
+  width: 12px;
+  height: 12px;
+  background-color: #10b981;
+  border-radius: 2px;
+}
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-legend
+  .chart-legend-item
+  .legend-expense {
+  width: 12px;
+  height: 12px;
+  background-color: #ef4444;
+  border-radius: 2px;
+}
+
+/* ****************************************** */
+/* chart-group */
+.layout .main .income-vs-expenses .income-vs-expenses-chart .chart-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 16px 0;
+  /* height: 100%; */
+}
+/* chart-item */
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-group
+  .chart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 4px;
+}
+/* chart-bars */
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-group
+  .chart-item
+  .chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  /* height: 160px; */
+}
+/* chart-item chart-income */
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-group
+  .chart-item
+  .chart-bars
+  .chart-bar-income {
+  background: #10b981;
+  border-radius: 3px 3px 0 0;
+  width: 16px;
+  height: 95px;
+}
+/* chart-item chart-expense */
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-group
+  .chart-item
+  .chart-bars
+  .chart-bar-expense {
+  background: #ef4444;
+  border-radius: 3px 3px 0 0;
+  width: 16px;
+  height: 42px;
+}
+/* chart-item p */
+.layout
+  .main
+  .income-vs-expenses
+  .income-vs-expenses-chart
+  .chart-group
+  .chart-item
+  p {
+  font-weight: 600;
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  color: #64748b;
+  margin: 8px 0 0 0;
+}

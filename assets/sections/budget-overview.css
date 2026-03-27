@@ -1,0 +1,401 @@
+.layout .main .budget-overview {
+  grid-area: budget-overview;
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 24px;
+  border: 1px solid #ebe6e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 #0000001a;
+}
+/* ****************************************** */
+/* budget-overview-title */
+.layout .main .budget-overview .budget-overview-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* budget-overview-title h3 */
+.layout .main .budget-overview .budget-overview-title h3 {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  margin: 0;
+}
+/* budget-overview-title span */
+.layout .main .budget-overview .budget-overview-title span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4a5565;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+/* budget-overview-title span:hover */
+.layout .main .budget-overview .budget-overview-title span:hover {
+  color: #101828;
+}
+/* ****************************************** */
+/* budget-overview-summary */
+.layout .main .budget-overview .budget-overview-summary {
+  margin-bottom: 24px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #eff4ff;
+}
+/* budget-overview-summary .summary-item */
+.layout .main .budget-overview .budget-overview-summary .summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .summary-item .summary-item-right */
+/* summary-item-title */
+.layout
+  .main
+  .budget-overview
+  .budget-overview-summary
+  .summary-item
+  .summary-item-right
+  .summary-item-title {
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 0.875rem;
+  color: #155dfc;
+  margin: 0;
+}
+/* summary-item-amount */
+.layout
+  .main
+  .budget-overview
+  .budget-overview-summary
+  .summary-item
+  .summary-item-right
+  .summary-item-amount {
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 1.5rem;
+  color: #1c398e;
+  margin: 0;
+}
+/* ****************************************** */
+/* .summary-item .summary-item-left */
+.layout
+  .main
+  .budget-overview
+  .budget-overview-summary
+  .summary-item
+  .summary-item-left {
+  text-align: right;
+}
+/* summary-item-title */
+.layout
+  .main
+  .budget-overview
+  .budget-overview-summary
+  .summary-item
+  .summary-item-left
+  .summary-item-title {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 0.875rem;
+  color: #6a7282;
+  margin: 0;
+}
+/* summary-item-amount */
+.layout
+  .main
+  .budget-overview
+  .budget-overview-summary
+  .summary-item
+  .summary-item-left
+  .summary-item-amount {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  color: #00a63e;
+  margin: 0;
+}
+/* ****************************************** */
+/* budget-overview-chart */
+.layout .main .budget-overview .budget-overview-chart {
+  margin-top: 12px;
+}
+/* chart-legend */
+.layout .main .budget-overview .budget-overview-chart .chart-legend {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #4a5565;
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+/* chart */
+.layout .main .budget-overview .budget-overview-chart .chart {
+  width: 100%;
+  height: 8px;
+  background-color: #ebe6e7;
+  border-radius: 4px;
+}
+/* chart-income */
+.layout .main .budget-overview .budget-overview-chart .chart .chart-income {
+  background-color: #4277ff;
+  width: 84%;
+  height: 8px;
+  border-radius: 4px;
+}
+/* ****************************************** */
+/* budget-overview-categories */
+.layout
+  .main
+  .budget-overview
+  .budget-overview-categories
+  .budget-categories-item {
+  background: #f9fafb80;
+  border: 1px solid #e5e7ebcc;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: all 0.2s ease-in-out;
+}
+/* budget-categories-item:hover */
+.layout
+  .main
+  .budget-overview
+  .budget-overview-categories
+  .budget-categories-item:hover {
+  background: #f3f4f6cc;
+  border-color: #d1d5dbe6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px #0000001a;
+}
+/* ****************************************** */
+/* budget-title */
+.layout .main .budget-overview .budget-categories-item .budget-title {
+  margin: 0 0 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* budget-title-right */
+.layout .main .budget-overview .budget-categories-item .budget-title-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .budget-title-right .budget-icon */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-right
+  .budget-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+/* .budget-icon1 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-right
+  .budget-icon1 {
+  background-color: #ffedd4;
+  color: #f54a00;
+}
+/* .budget-icon2 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-right
+  .budget-icon2 {
+  background-color: #fee2e2;
+  color: #e7000b;
+}
+/* .budget-icon3 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-right
+  .budget-icon3 {
+  background-color: #fce7f3;
+  color: #e60076;
+}
+/* .budget-icon4 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-right
+  .budget-icon4 {
+  background-color: #dcfce7;
+  color: #00a63e;
+}
+/* budget-title-desc */
+/* budget-type */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-right
+  .budget-title-desc
+  .budget-type {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 1rem;
+  margin: 0;
+}
+/* budget-amount */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-right
+  .budget-title-desc
+  .budget-amount {
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  color: #6a7282;
+  margin: 0;
+}
+/* ****************************************** */
+/* budget-title-left */
+.layout .main .budget-overview .budget-categories-item .budget-title-left {
+  text-align: right;
+}
+/* budget-title-left p */
+.layout .main .budget-overview .budget-categories-item .budget-title-left p {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+/* budget-title-left .usage */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-left
+  .usage {
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 3.40282e38px;;
+  display: inline-flex;
+  align-items: center;
+}
+/* budget-title-left .usage1 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-left
+  .usage1 {
+  background-color: #dcfce7;
+  color: #166534;
+}
+/* budget-title-left .usage2 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-left
+  .usage2 {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+/* budget-title-left .usage3 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-left
+  .usage3 {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+/* budget-title-left .usage4 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-title-left
+  .usage4 {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* ****************************************** */
+/* chart */
+.layout .main .budget-overview .budget-categories-item .budget-chart {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+/* chart-income */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-chart
+  .budget-chart-income {
+  height: 8px;
+  border-radius: 4px;
+}
+/* budget-chart-income1 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-chart
+  .budget-chart-income1 {
+  background-color: #ff6900;
+  width: 50%;
+}
+/* budget-chart-income2 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-chart
+  .budget-chart-income2 {
+  background-color: #fb2c36;
+  width: 100%;
+}
+/* budget-chart-income3 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-chart
+  .budget-chart-income3 {
+  background-color: #f6339a;
+  width: 80%;
+}
+/* budget-chart-income4 */
+.layout
+  .main
+  .budget-overview
+  .budget-categories-item
+  .budget-chart
+  .budget-chart-income4 {
+  background-color: #00c951;
+  width: 86%;
+}

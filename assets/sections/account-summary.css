@@ -1,0 +1,152 @@
+.layout .main .account-summary {
+  grid-area: account-summary;
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 24px;
+  border: 1px solid #ebe6e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 #0000001a;
+}
+/* ****************************************** */
+/* account-summary-title */
+.layout .main .account-summary .account-summary-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* account-summary-title h3 */
+.layout .main .account-summary .account-summary-title h3 {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  margin: 0;
+}
+/* account-summary-title span */
+.layout .main .account-summary .account-summary-title span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4a5565;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+/* account-summary-title span:hover */
+.layout .main .account-summary .account-summary-title span:hover {
+  color: #101828;
+}
+/* ****************************************** */
+/* account-types account-type */
+.layout .main .account-summary .account-types .account-type {
+  background-color: #fbf9fa;
+  padding: 16px;
+  border: 1px solid #f6f3f4;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* account-info */
+.layout .main .account-summary .account-types .account-type .account-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* account-icon */
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  .account-info
+  .account-icon {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+/* account-icon1 */
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  .account-info
+  .account-icon1 {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+/* account-icon2 */
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  .account-info
+  .account-icon2 {
+  background-color: #dcfce7;
+  color: #00a63e;
+}
+/* account-icon3 */
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  .account-info
+  .account-icon3 {
+  background-color: #f3e8ff;
+  color: #9810fa;
+}
+/* account-name */
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  .account-info
+  .account-name {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+}
+/* account-bank */
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  .account-info
+  .account-bank {
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  color: #6a7282;
+  margin: 0;
+}
+/* account-balance */
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  p {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+}
+.layout
+  .main
+  .account-summary
+  .account-types
+  .account-type
+  .account-balance {
+  color: #e7000b;
+}

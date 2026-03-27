@@ -1,0 +1,444 @@
+.layout .main .payment-methods {
+  grid-area: payment-methods;
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 24px;
+  border: 1px solid #ebe6e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 #0000001a;
+}
+/* ****************************************** */
+/* payment-methods-title */
+.layout .main .payment-methods .payment-methods-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* payment-methods-title h3 */
+.layout .main .payment-methods .payment-methods-title h3 {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  margin: 0;
+}
+/* payment-methods-title span */
+
+.layout .main .payment-methods .payment-methods-title span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4a5565;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+/* payment-methods-title span:hover */
+.layout .main .payment-methods .payment-methods-title span:hover {
+  color: #101828;
+}
+
+/* ****************************************** */
+/* ****************************************** */
+/* ****************************************** */
+/* Flip-card */
+.layout .main .payment-methods .flip-card {
+  perspective: 1200px;
+  margin-bottom: 16px;
+}
+.layout .main .payment-methods .flip-card:last-child {
+  margin-bottom: 0;
+}
+
+/* flip-card-inner */
+.layout .main .payment-methods .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  /* transition: transform 0.7s ease; */
+  transition: transform 0.7s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+/* flip-card:hover flip-card-inner*/
+.layout .main .payment-methods .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.layout .main .payment-methods .flip-card-front,
+.layout .main .payment-methods .flip-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+/* flip-card-front */
+.layout .main .payment-methods .flip-card .flip-card-inner .flip-card-front {
+  color: #fff;
+  padding: 28px;
+  box-shadow: 0 10px 15px -3px #0000001a;
+  position: relative;
+}
+/* front1 */
+.layout .main .payment-methods .flip-card .flip-card-inner .front1 {
+  background-color: #372aac;
+}
+/* front2 */
+.layout .main .payment-methods .flip-card .flip-card-inner .front2 {
+  background-color: #c70036;
+}
+/* front3 */
+.layout .main .payment-methods .flip-card .flip-card-inner .front3 {
+  background-color: #193cb8;
+}
+/* card-badge */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .card-badge {
+  color: #fff;
+  backdrop-filter: blur(4px);
+  background-color: #ffffff24;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+/* flip-card-front-top */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+/* front-top .right-side */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-top
+  .right-side {
+  width: 48px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #fff3;
+}
+/* right-side .right-side-inner */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-top
+  .right-side
+  .right-side-inner {
+  background-color: #fff6;
+  width: 24px;
+  height: 16px;
+  border-radius: 4px;
+}
+/* front-top .left-side (visa-logo) */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-top
+  .visa-logo {
+  height: 1.875rem;
+  vertical-align: -0.125em;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.2;
+}
+/* ****************************************** */
+/* ****************************************** */
+
+/* front-bottom */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom {
+  margin-bottom: 16px;
+}
+
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom
+  .card-number {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+}
+/*   front-bottom-holder-expiry */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom
+  .front-bottom-holder-expiry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* front-bottom-holder-expiry .card-holder p */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom
+  .front-bottom-holder-expiry
+  .card-holder
+  p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.3333;
+}
+/* front-bottom-holder-expiry .card-holder span */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom
+  .front-bottom-holder-expiry
+  .card-holder
+  span {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+/* front-bottom-holder-expiry .expiry p */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom
+  .front-bottom-holder-expiry
+  .expiry
+  p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.3333;
+}
+/* front-bottom-holder-expiry .expiry span */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom
+  .front-bottom-holder-expiry
+  .expiry
+  span {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+/* front-bottom-holder-expiry .expiry verified */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-front
+  .front-bottom
+  .front-bottom-holder-expiry
+  .expiry
+  .verified {
+  margin: 0;
+  padding: 0;
+  color: #05df72;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+/* ****************************************** */
+/* ****************************************** */
+/* ****************************************** */
+/* ****************************************** */
+/* flip-card-back */
+.layout .main .payment-methods .flip-card .flip-card-inner .flip-card-back {
+  background-image: linear-gradient(120deg, #051026, #0b1220 45%, #0f1724);
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* flip-card-back .magnetic-strip */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .magnetic-strip {
+  /* height: 52px; */
+  height: 40px;
+  border-radius: 3px;
+  background-image: linear-gradient(90deg, #000, #111 40%, #2b2b2b);
+  margin-top: 6px;
+  box-shadow: inset 0 6px 14px #ffffff05;
+}
+/* flip-card-back .back-text */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .back-text {
+  font-size: 10px;
+  color: #ffffff7a;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+/* number-strip */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .number-strip {
+  color: #111827;
+  background-image: linear-gradient(90deg, #f8fafc, #eef2f6);
+  border-radius: 4px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  margin-top: 18px;
+}
+/* gray-line */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .number-strip
+  .gray-line {
+  flex: 1;
+  width: 86%;
+  height: 12px;
+  border-radius: 2px;
+  background-image: linear-gradient(90deg, #0000000f, #0000002e, #0000000f);
+}
+/* number-strip span */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .number-strip
+  span {
+  color: #000000d9;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  margin-left: 8px;
+}
+/* ///// tmm */
+/* cvv-box */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .cvv-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 12px;
+}
+/* cvv-box p */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .cvv-box
+  p {
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  color: #d1d5dc;
+  margin: 0;
+  padding: 0;
+}
+/* cvv-value */
+.layout
+  .main
+  .payment-methods
+  .flip-card
+  .flip-card-inner
+  .flip-card-back
+  .cvv-value {
+  background: #fff;
+  color: #111827;
+  border-radius: 6px;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 8px 12px;
+}

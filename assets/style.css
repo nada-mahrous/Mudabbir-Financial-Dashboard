@@ -1,0 +1,51 @@
+/* global */
+/* @import url('global/global.css'); */
+@import "global/global.css";
+
+/* plugins */
+@import "plugins/css/all.min.css";
+
+/* Sections */
+@import "sections/layout.css";
+@import "sections/sidebar.css";
+@import "sections/header.css";
+@import "sections/summary-card.css";
+@import "sections/recent-activities.css";
+@import "sections/monthly-bills.css";
+@import "sections/last-transactions.css";
+@import "sections/budget-overview.css";
+@import "sections/income-vs-expenses.css";
+@import "sections/account-summary.css";
+@import "sections/payment-methods.css";
+
+
+
+/* inline--------id---------class---------element */
+
+
+/* /////////////////////////////////// */
+
+
+/******************** Media Query ********************/
+
+/* mobile first */
+
+/* sm */
+/* @media screen and (min-width: 640px) {
+} */
+
+/* md */
+/* @media screen and (min-width: 768px) {
+} */
+
+/* lg */
+/* @media screen and (min-width: 1024px) {
+} */
+
+/* xl */
+/* @media screen and (min-width: 1280px) {
+} */
+
+/* xxl */
+/* @media screen and (min-width: 1536px) {
+} */

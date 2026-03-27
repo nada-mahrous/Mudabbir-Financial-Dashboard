@@ -1,0 +1,207 @@
+.layout .main .monthly-bills {
+  grid-area: monthly-bills;
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 24px;
+  border: 1px solid #ebe6e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 #0000001a;
+}
+/* ****************************************** */
+/* monthly-bills-title */
+.layout .main .monthly-bills .monthly-bills-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* monthly-bills-title h3 */
+.layout .main .monthly-bills .monthly-bills-title h3 {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  margin: 0;
+}
+/* monthly-bills-title span */
+.layout .main .monthly-bills .monthly-bills-title span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: #4a5565;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+/* monthly-bills-title span:hover */
+.layout .main .monthly-bills .monthly-bills-title span:hover {
+  color: #101828;
+}
+/* ****************************************** */
+/* monthly-bills-desc */
+.layout .main .monthly-bills .monthly-bills-desc {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.layout .main .monthly-bills .monthly-bills-desc .monthly-bills-amount {
+  font-weight: 600;
+  line-height: 36px;
+  font-size: 30px;
+  margin: 0;
+}
+.layout .main .monthly-bills .monthly-bills-desc .monthly-bills-total {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+  color: #6a7282;
+  margin: 0;
+}
+/* ****************************************** */
+/* monthly-bills-content */
+.layout .main .monthly-bills .monthly-bills-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr;  */
+  gap: 12px;
+  grid-template-areas:
+    "content-item content-item2"
+    "content-item3 content-item4";
+}
+/* ****************************************** */
+.content-item {
+  grid-area: content-item;
+}
+.content-item2 {
+  grid-area: content-item2;
+}
+.content-item3 {
+  grid-area: content-item3;
+}
+.content-item4 {
+  grid-area: content-item4;
+}
+/* ****************************************** */
+/* content-item */
+.layout .main .monthly-bills .monthly-bills-content .content-item {
+  padding: 12px;
+  background-color: #fbf9fa;
+  border: 1px solid #f6f3f4;
+  border-radius: 12px;
+  text-align: center;
+  /* width: 50%; */
+}
+/* item-icon */
+.layout .main .monthly-bills .monthly-bills-content .content-item .item-icon {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 auto 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+/* item-icon1 */
+.layout .main .monthly-bills .monthly-bills-content .content-item .item-icon1 {
+  background-color: #dbeafe;
+  color: #155dfc;
+}
+/* item-icon2 */
+.layout .main .monthly-bills .monthly-bills-content .content-item .item-icon2 {
+  background-color: #fef9c2;
+  color: #d08700;
+}
+/* item-icon3 */
+.layout .main .monthly-bills .monthly-bills-content .content-item .item-icon3 {
+  background-color: #dcfce7;
+  color: #00a63e;
+}
+/* item-icon4 */
+.layout .main .monthly-bills .monthly-bills-content .content-item .item-icon4 {
+  background-color: #ffe2e2;
+  color: #e7000b;
+}
+/* ****************************************** */
+/* item-details */
+/* item-title */
+.layout
+  .main
+  .monthly-bills
+  .monthly-bills-content
+  .content-item
+  .item-details
+  .item-title {
+  color: #6a7282;
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  margin: 0;
+}
+/* item-amount */
+.layout
+  .main
+  .monthly-bills
+  .monthly-bills-content
+  .content-item
+  .item-details
+  .item-amount {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+}
+/* item-due */
+.layout
+  .main
+  .monthly-bills
+  .monthly-bills-content
+  .content-item
+  .item-details
+  .item-due {
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  margin: 0;
+}
+/* due1 */
+.layout
+  .main
+  .monthly-bills
+  .monthly-bills-content
+  .content-item
+  .item-details
+  .due1 {
+  color: #fb2c36;
+}
+/* due2 */
+.layout
+  .main
+  .monthly-bills
+  .monthly-bills-content
+  .content-item
+  .item-details
+  .due2 {
+  color: #ff6900;
+}
+/* due3 */
+.layout
+  .main
+  .monthly-bills
+  .monthly-bills-content
+  .content-item
+  .item-details
+  .due3 {
+  color: #00c951;
+}
+/* due4 */
+.layout
+  .main
+  .monthly-bills
+  .monthly-bills-content
+  .content-item
+  .item-details
+  .due4 {
+  color: #6a7282;
+}
